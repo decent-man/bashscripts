@@ -6,7 +6,7 @@ This here is a script to create a dynamic dialog using dmenu.
 
 The usage is pretty simple
 
-	```ddlg "Any Prompt Text comes here:" optionlabel1 command1 optionlabel2 command2 optionlabel3 command3............optionlabel* command*```
+	ddlg "Any Prompt Text comes here:" optionlabel1 command1 optionlabel2 command2 optionlabel3 command3............optionlabel* command*
 
 Didn't get it? No worries I'll explain better
 
@@ -16,7 +16,7 @@ The first argument is supposed to be the text you want prompted to you.
 
 E.g
 
-	`ddlg "Do you wish to continue?:"`
+	ddlg "Do you wish to continue?:"
 
 After which you can specify an alternate series of labels and commands to be executed. Btw even not specifying anything and only the prompt text will still bring up dmenu with the prompt text and no options(You can use this to test if the script itself is working or not)
 
