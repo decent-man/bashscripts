@@ -20,9 +20,9 @@ E.g
 
 After which you can specify an alternate series of labels and commands to be executed. Btw even not specifying anything and only the prompt text will still bring up dmenu with the prompt text and no options(You can use this to test if the script itself is working or not)
 
-##### Definition
+#### Definition
 
-- **Label** : A label is what will show up in dmenu as an option(s)
+- **Label** : A label is what will show up in dmenu as a selectable option(s).
 - **Command** : The command that will be executed if its corresponding label was selected in dmenu.
 
 A good example would be a basic Yes/No Prompt.
@@ -42,7 +42,23 @@ Getting it? Its just an alternating series of options and 'what-you-want-to-do-i
 
 The menu can be as big as you want it to be, no limitations.
 
-Thats it.
+### Application
+
+I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't have a proper one -I believe for the freedom to customize thatas well.
+
+In my use case the command looks like:
+
+	ddlg "Which Exit Method?:" Logout "i3-msg exit" Reboot restart Shutdown poweroff
+
+Where the output looks somewhat like:
+
+![power menu implementation](/screenshots/mypwrmenu.png)
+
+Its made with the idea of being expandable even I have only yet ever used it for such a basic thing.
+
+You can customize it all you like to your own needs. That is the essence of Linux.
+
+Thats it from my side.
 
 **Possible Updates:**
  - A feature to connect to dmenu options directly(-nf -sb -sf,etc)
