@@ -1,2 +1,10 @@
-# bashscripts
-A place where I plan to host my bash scripts
+# DDLG
+
+This here is a script to create a dynamic dialog using dmenu.
+
+The usage is pretty simple
+
+
+
+
+
