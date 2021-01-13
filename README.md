@@ -20,7 +20,7 @@ E.g
 
 After which you can specify an alternate series of labels and commands to be executed. Btw even not specifying anything and only the prompt text will still bring up dmenu with the prompt text and no options(You can use this to test if the script itself is working or not)
 
-#####Definition
+##### Definition
 
 - **Label** : A label is what will show up in dmenu as an option(s)
 - **Command** : The command that will be executed if its corresponding label was selected in dmenu.
