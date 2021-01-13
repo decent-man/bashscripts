@@ -49,7 +49,7 @@ The menu can be as big as you want it to be, no limitations.
 
 ### Application
 
-I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't have a proper one -I believe for the freedom to customize thatas well.
+I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't have a proper one -I believe for the freedom to customize that as well.
 
 In my use case the command looks like:
 
