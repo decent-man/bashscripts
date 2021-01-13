@@ -27,13 +27,13 @@ After which you can specify an alternate series of labels and commands to be exe
 
 A good example would be a basic Yes/No Prompt.
 
-	`ddlg "Do you wish to continue?:" Yes "dosomethinghere" No "dosomethinghere"`
+	ddlg "Do you wish to continue?:" Yes "dosomethinghere" No "dosomethinghere"
 
 If this still feels complicated, just ignore the fuss in the beginning.
 
 This is the core idea:
 
-	`Yes "executesomethinghereifYes" No "executesomethinghereifNo" Maybe "whatthehellismaybe?"`
+	Yes "executesomethinghereifYes" No "executesomethinghereifNo" Maybe "whatthehellismaybe?"
 
 Getting it? Its just an alternating series of options and 'what-you-want-to-do-if-you-selected-this-option'.
 
