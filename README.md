@@ -6,7 +6,7 @@ This here is a script to create a dynamic dialog using dmenu.
 
 The usage is pretty simple
 
-	`ddlg "Any Prompt Text comes here:" optionlabel1 command1 optionlabel2 command2 optionlabel3 command3............optionlabel* command* `
+	```ddlg "Any Prompt Text comes here:" optionlabel1 command1 optionlabel2 command2 optionlabel3 command3............optionlabel* command*```
 
 Didn't get it? No worries I'll explain better
 
