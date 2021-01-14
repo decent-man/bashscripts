@@ -47,7 +47,15 @@ Getting it? Its just an alternating series of options and 'what-you-want-to-do-i
 
 The menu can be as big as you want it to be, no limitations.
 
-### Application
+### Installation
+
+- Clone the script using `git clone https://github.com/whotftookmyname/bashscripts.git` .
+- Move the script file `ddlg.sh` wherever you want.(Either your home directory or if you have a folder for scripts)
+- Set exeutable permissions to the script using `chmod +x ddlg.sh`.
+- Call it wherever you need with ddlg(probably have to add it in your `$PATH` or have to specify `~/ddlg.sh` everytime for executing within configs/scripts)
+- Make an `alias` for it in your `.bashrc` for convenience if you plan on using it within a terminal.
+
+### Applications
 
 Say you want to make a dialog that asks you a choice between search engines to use
 
