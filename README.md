@@ -62,20 +62,25 @@ For which it outputs:
 
 ![Search Engine Example](/screenshots/exse.png)
 
-Or you want to select an from a list of apps to open a file type, say an image file is to be opened and you want to choose whether to open in a photoviewer or a photo editor.(Very useful if you want to set up a customized Screenshot utility, something like this could be used inside `scrot -e ''`)
+Or you want to select an from a list of apps to open a file type, say an image file is to be opened and you want to choose whether to open in a Photo Viewer(e.g nomacs) or a Photo Editor(gimp).
+
+**Powertip:** Very useful if you want to set up a customized Screenshot utility, something like this could be used inside `scrot -e 'ddlg ....'` if you want more control over your screenshots.
 
 ```
 ddlg "Which App?:" nomacs "nomacs ~/Pictures/$f" GIMP "gimp ~/Pictures/$f"
 
 ```
+Output:
 
-I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't have a proper one -I believe for the freedom to customize that as well.
+![App Selector](/screenshots/appselect.png)
+
+I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't one -I believe for the freedom to have a custom one.
 
 In my use case the command looks like :
 
 	ddlg "Which Exit Method?:" Logout "i3-msg exit" Reboot restart Shutdown poweroff
 
-Where the output looks like[the colors are changed in the script itself I don't know how to implement that :( ]:
+Where the output looks like[the colors are  changed manually in the script itself as I don't know how to implement that with the arguments itself yet, atleast not on demand but only forcibly :( ]:
 
 ![power menu implementation](/screenshots/mypwrmenu.png)
 
