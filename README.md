@@ -91,7 +91,7 @@ Its made with the idea of being expandable even if I have only ever used it for 
 You can customize it all you like to your own needs. That is the thing with Linux.
 
 **Possible Updates:**
- - A feature to connect to dmenu options directly(-nf -sb -sf,etc) so you can specify different colors for dynamic usage(and for Eye Candy ofcourse)
+ - A feature to connect to dmenu options directly(-nf -sb -sf,etc) so you can specify different colors for dynamic usage(and for Eye Candy/Visual Convenience of course!)
 
 ### Mentions
 - This is my first bash script ever. Took me a few hours to write this since I'm pretty confused betwen the similarities and differences between C and bash.
