@@ -1,5 +1,5 @@
 # DDLG
-## Generate Quick Dialogs with dmenu
+## Generate Quick Dialogs with dmenu 
 This here is a script to create a dynamic dialog using dmenu.
 
 ### Usage
@@ -74,21 +74,21 @@ Output:
 
 ![App Selector](/screenshots/appselect.png)
 
-I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't one -I believe for the freedom to have a custom one.
+/The colors are  changed manually in the script itself as I don't know how to implement that with the arguments itself yet, atleast not on demand but only forcibly :( 
+
+I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't have one -I believe for the freedom to have a custom one.
 
 In my use case the command looks like :
 
 	ddlg "Which Exit Method?:" Logout "i3-msg exit" Reboot restart Shutdown poweroff
 
-Where the output looks like[the colors are  changed manually in the script itself as I don't know how to implement that with the arguments itself yet, atleast not on demand but only forcibly :( ]:
+Where the output looks like:
 
 ![power menu implementation](/screenshots/mypwrmenu.png)
 
 Its made with the idea of being expandable even if I have only ever used it for such a basic thing.
 
-You can customize it all you like to your own needs. That is the essence of Linux.
-
-Thats it from my side.
+You can customize it all you like to your own needs. That is the thing with Linux.
 
 **Possible Updates:**
  - A feature to connect to dmenu options directly(-nf -sb -sf,etc) so you can specify different colors for dynamic usage(and for Eye Candy ofcourse)
@@ -98,4 +98,6 @@ Thats it from my side.
 
 - Was inspired to do this because of Luke Smith - Great guy go check him out on youtube.(This video inspired me to do this: https://youtu.be/R9m723tAurA)
 
--Enjoy d-dialogging.
+Thats it from my side.
+
+Enjoy d-dialogging.
