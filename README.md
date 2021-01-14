@@ -49,13 +49,33 @@ The menu can be as big as you want it to be, no limitations.
 
 ### Application
 
+Say you want to make a dialog that asks you a choice between search engines to use
+
+The command for something like this would look like:
+
+```
+ddlg "Where to Search?:" DuckDuckGo "w3m www.duckduckgo.com" Google "w3m google.com" Bing "w3m bing.com" Yahoo "w3m youareretarded.com"
+
+```
+
+For which it outputs:
+
+![Search Engine Example](/screenshots/exse.png)
+
+Or you want to select an from a list of apps to open a file type, say an image file is to be opened and you want to choose whether to open in a photoviewer or a photo editor.(Very useful if you want to set up a customized Screenshot utility, something like this could be used inside `scrot -e ''`)
+
+```
+ddlg "Which App?:" nomacs "nomacs ~/Pictures/$f" GIMP "gimp ~/Pictures/$f"
+
+```
+
 I personally wrote it to make a Power Menu(Logout,Reboot, Shutdown that sort of thing -I'm not a power user lol) for my i3wm since it doesn't have a proper one -I believe for the freedom to customize that as well.
 
-In my use case the command looks like:
+In my use case the command looks like :
 
 	ddlg "Which Exit Method?:" Logout "i3-msg exit" Reboot restart Shutdown poweroff
 
-Where the output looks somewhat like:
+Where the output looks like[the colors are changed in the script itself I don't know how to implement that :( ]:
 
 ![power menu implementation](/screenshots/mypwrmenu.png)
 
@@ -68,3 +88,9 @@ Thats it from my side.
 **Possible Updates:**
  - A feature to connect to dmenu options directly(-nf -sb -sf,etc) so you can specify different colors for dynamic usage(and for Eye Candy ofcourse)
 
+### Mentions
+- This is my first bash script ever. Took me a few hours to write this since I'm pretty confused betwen the similarities and differences between C and bash.
+
+- Was inspired to do this because of Luke Smith - Great guy go check him out on youtube.(This video inspired me to do this: https://youtu.be/R9m723tAurA)
+
+-Enjoy d-dialogging.
