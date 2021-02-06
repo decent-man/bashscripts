@@ -16,7 +16,7 @@ You can use the script without modifying it at all, just that these are my defau
 Usage totally depends on how you customized it.
 
 >Note that I have specifically tailored it for using it with my qutebrowser setup, so it loads up with all of my qutebrowser quickmarks by default.
->But you can use it without it as well. Just that you won't have the quickmarks listed as I do. If you can get your browser's bookmarks conveniently then be sure to check out [Quickmarks](https://github.com/whotftookmyname/bashscripts/blob/main/dsearch/README.md#advanced)
+>But you can use it without it as well. Just that you won't have the quickmarks listed as I do. If you can get your browser's bookmarks conveniently then be sure to check out [Quickmarks](https://github.com/whotftookmyname/bashscripts/blob/main/dsearch/README.md#quickmarks)
 
 Be sure to change browser(`$BRW`) in the configuration if you use/prefer a different browser.([Changing Browser](https://github.com/whotftookmyname/bashscripts/blob/main/dsearch/README.md#advanced))
 
@@ -24,7 +24,8 @@ Upon being called shows up with a list of quickmarks(Only if you use qutebrowser
 
 ![dsearch Called](/dsearch/scrots/ds1.png)
 
-However these are the **defaults**:
+### Defaults
+
 #### Commands
 To be typed inside dmenu
 - **ArchWiki**
@@ -67,25 +68,25 @@ The script itself has some basic instructions/explanations for making any change
         - E.g Lets figure out the 'search url' of Amazon.com.
         - On amazon.com lets search for 'Hello World'.
         - Once the search is loaded observe the new url of the page. Look for Hello and World in the url. Generally these will be seperated by a '+' but do note if its using any other characters for spaces.
-        - For now the whole link looks like <https://www.amazon.com/s?k=Hello+World> . Filter out 'Hello World' from the link. In this example the 'search url' would be <https://www.amazon.com/s?k=> .
-        - Beyond this anything you type (with spaces translated to '+') will be a proper search url and perform a direct search on that website.
+        - For now the whole link looks like <https://www.amazon.com/s?k=Hello+World> . Filter out 'Hello World' and any seperators used from the link. In this example the 'search url' would be <https://www.amazon.com/s?k=> .
+        - Beyond this anything you type (with spaces converted to '+') will be a proper search url and perform a direct search on that website.
         - So if I type in my url bar <https://www.amazon.com/s?k=Corsair+Keyboard> then it would lead me to a page where the search is performed automatically for 'Corsair Keyboard' on amazon.
 
     2. Write a function referring to the sample function written in the script itself(under 'Basic Layout is:'). Temporarily lets call it `myFunction`
         - The `SEARCH` variable is mostly going to be the same. There will be changes if your website uses other characters instead of '+' for spaces. Just make the changes in `tr ' ' '+'`.
         - Execute the whole thing with `$BRW yoururl/s?=$SEARCH`. If you have any custom pages you want to load under the main website just add a case statement accordingly (refer the YouTube function in the script on how to do this).
 2. **Adding the corresponding case**
-  - Simply add a new case entry in the format in the __MAIN CODE__ section
+  - Simply add a new case entry in the __MAIN CODE__ section in the format:
 ```           
 mycombo) myFunction $(echo $QM | cut -cX- | tr '#' ' ');;
 ```
 where
 
-    - `mycombo` is whatever you want to type in dmenu to target your website.
-    - `myFunction` is the website's function you created.
-    - `echo $QM` : the whole thing you typed in dmenu
-    - `cut -cX-` : cutting out the command from the beginning so that doesn't get included into the search. `X` = 2 + length of `mycombo` .
-    - `tr '#' ''`: trim out any characters that interfere with searching. If your search includes a '#' then anything after the '#' will not be included into the search.
+- `mycombo`   : Whatever you want to type in dmenu to target your website. For convenience use a short 2-3 letter version.
+- `myFunction`: the website's function you created.
+- `echo $QM`  : the whole thing you typed in dmenu.
+- `cut -cX-`  : cutting out the command from the beginning so that doesn't get included into the search. `X` = 2 + length of `mycombo` .
+- `tr '#' ''` : trim out any characters that interfere with searching. If your search includes a '#' then anything after the '#' will not be included into the search.
      
 ##### Quickmarks
 
@@ -95,7 +96,7 @@ If you use a different browser and have a way to load up your bookmarks in the d
 
     QM=$(cat ~/.config/qutebrowser/quickmarks | awk '{print $2}' | dmenu -l 8 -nb $dbcolor -sf $dbcolor -sb $dcolor -nf $dcolor -fn "$FONT")
 
-Just change the part before `| dmenu ....` and you're set.
+Just change the part between `$(` & `| dmenu ....` and you're set.
 
 Change the script however you want to your liking.
 
