@@ -70,7 +70,9 @@
 #===================================================================================================================
 # If on qutebrowser make sure to have all quickmark names as single word names. Else its not going to work. I know I know its just a hack.
 #Pipes my qutebrowser quickmarks to dmenu and also stores the dmenu output
-QM=$(cat ~/.config/qutebrowser/quickmarks | awk '{print $2}' | dmenu -l 8 -nb $dbcolor -sf $dbcolor -sb $dcolor -nf $dcolor -fn "$FONT")
+[ -e ~/.config/qutebrowser/quickmarks ] && QM=$(cat ~/.config/qutebrowser/quickmarks | awk '{print $2}' | dmenu -l 8 -nb $dbcolor -sf $dbcolor -sb $dcolor -nf $dcolor -fn "$FONT") 
+[ ! -e ~/.config/qutebrowser/quickmarks ] QM=$(echo "" | dmenu -l 8 -nb $dbcolor -sf $dbcolor -sb $dcolor -nf $dcolor -fn "$FONT" -p "?:") 
+
 # Check if output is not null. Most likely the case if your quickmarks are empty and you pressed enter with no args
 [ -z "$QM" ] && exit ;
 # Grab the command from the beginning(if any)
