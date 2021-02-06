@@ -1,4 +1,4 @@
-#DSEARCH
+# DSEARCH
 ## Search quicker with dmenu
     A script to lookup stuff from your favorite websites
 
