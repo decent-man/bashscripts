@@ -63,17 +63,17 @@ The script itself has some basic instructions/explanations for making any change
 
 ##### Adding a Website
 1. **Creating the Function**
-  1. Fetch the 'search url' of the website you want. This can easily be figured out by performing a search on that website and filtering out the text you searched for.
-    - E.g Lets figure out the 'search url' of Amazon.com.
-    - On amazon.com lets search for 'Hello World'.
-    - Once the search is loaded observe the new url of the page. Look for Hello and World in the url. Generally these will be seperated by a '+' but do note if its using any other characters for spaces.
-    - For now the whole link looks like <https://www.amazon.com/s?k=Hello+World> . Filter out 'Hello World' from the link. In this example the 'search url' would be <https://www.amazon.com/s?k=> .
-    - Beyond this anything you type (with spaces translated to '+') will be a proper search url and perform a direct search on that website.
-    - So if I type in my url bar <https://www.amazon.com/s?k=Corsair+Keyboard> then it would lead me to a page where the search is performed automatically for 'Corsair Keyboard' on amazon.
+    1. Fetch the 'search url' of the website you want. This can easily be figured out by performing a search on that website and filtering out the text you searched for.
+        - E.g Lets figure out the 'search url' of Amazon.com.
+        - On amazon.com lets search for 'Hello World'.
+        - Once the search is loaded observe the new url of the page. Look for Hello and World in the url. Generally these will be seperated by a '+' but do note if its using any other characters for spaces.
+        - For now the whole link looks like <https://www.amazon.com/s?k=Hello+World> . Filter out 'Hello World' from the link. In this example the 'search url' would be <https://www.amazon.com/s?k=> .
+        - Beyond this anything you type (with spaces translated to '+') will be a proper search url and perform a direct search on that website.
+        - So if I type in my url bar <https://www.amazon.com/s?k=Corsair+Keyboard> then it would lead me to a page where the search is performed automatically for 'Corsair Keyboard' on amazon.
 
-  2. Write a function referring to the sample function written in the script itself(under 'Basic Layout is:'). Temporarily lets call it `myFunction`
-    - The `SEARCH` variable is mostly going to be the same. There will be changes if your website uses other characters instead of '+' for spaces. Just make the changes in `tr ' ' '+'`.
-    - Execute the whole thing with `$BRW yoururl/s?=$SEARCH`. If you have any custom pages you want to load under the main website just add a case statement accordingly (refer the YouTube function in the script on how to do this).
+    2. Write a function referring to the sample function written in the script itself(under 'Basic Layout is:'). Temporarily lets call it `myFunction`
+        - The `SEARCH` variable is mostly going to be the same. There will be changes if your website uses other characters instead of '+' for spaces. Just make the changes in `tr ' ' '+'`.
+        - Execute the whole thing with `$BRW yoururl/s?=$SEARCH`. If you have any custom pages you want to load under the main website just add a case statement accordingly (refer the YouTube function in the script on how to do this).
 2. **Adding the corresponding case**
   - Simply add a new case entry in the format in the __MAIN CODE__ section
 ```           
