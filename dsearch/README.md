@@ -18,7 +18,7 @@ Usage totally depends on how you customized it.
 >Note that I have specifically tailored it for using it with my qutebrowser setup, so it loads up with all of my qutebrowser quickmarks by default.
 >But you can use it without it as well. Just that you won't have the quickmarks listed as I do. If you can get your browser's bookmarks conveniently then be sure to check out [Quickmarks](https://github.com/whotftookmyname/bashscripts/blob/main/dsearch/README.md#quickmarks)
 
-Be sure to change browser(`$BRW`) in the configuration if you use/prefer a different browser.([Changing Browser](https://github.com/whotftookmyname/bashscripts/blob/main/dsearch/README.md#advanced))
+Be sure to change browser(`$BRW`) in the configuration if you use/prefer a different browser.([Changing Browser](https://github.com/whotftookmyname/bashscripts/blob/main/dsearch/README.md#basic))
 
 Upon being called shows up with a list of quickmarks(Only if you use qutebrowser and have quickmarks):
 
