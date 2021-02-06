@@ -24,6 +24,8 @@ Upon being called shows up with a list of quickmarks(Only if you use qutebrowser
 
 ![dsearch Called](/dsearch/scrots/ds1.png)
 
+>I blurred out the quickmarks on purpose. Wouldn't want anyone knowing about those can I now?
+
 ### Defaults
 
 #### Commands
